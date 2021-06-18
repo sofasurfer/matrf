@@ -1,4 +1,4 @@
-# Ruffener Website Prototype
+# RF Website Prototype
 
 Boilerplate for frontend development @ cubegrafik GmbH.
 
