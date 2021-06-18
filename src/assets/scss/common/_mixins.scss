@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Form Placeholder
+   ========================================================================== */
+
+@mixin placeholder {
+    &::-webkit-input-placeholder    {@content}
+    &:-moz-placeholder      {@content}
+    &::-moz-placeholder     {@content}
+    &:-ms-input-placeholder     {@content}
+}
+
+/* ==========================================================================
+   Fonts smoothing
+   ========================================================================== */
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+
+/* ==========================================================================
+   hide'n'show
+   ========================================================================== */
+
+@mixin visuallyhidden(){
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+@mixin visuallyunhidden(){
+	border: none;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+	position: static;
+	width: auto;
+	white-space: normal;
+}

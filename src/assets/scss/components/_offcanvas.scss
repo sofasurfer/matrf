@@ -1,0 +1,463 @@
+.scrollbar-test{
+  overscroll-behavior: contain;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#open-navigation{
+	min-height: 100%;
+}
+
+
+/* ==========================================================================
+   Offcanvas trigger
+   ========================================================================== */
+
+.c-offcanvas-toggle{
+	display: block;
+	height: 40px;
+	margin-top: -8px;
+	position: absolute;
+   	right: 30px;
+   	top: 0;
+   	width: 40px;
+	z-index: 1200;
+	@media only screen and (max-width:600px) {
+		margin-top: -10px;
+	}
+	&:hover{
+		cursor: pointer;
+		&.open:after{
+			width: 30px;
+		}
+		&.open:before{
+			width: 24px;
+		}
+        &.close:after{
+            width: 40px;
+            margin-right: -5px;
+        }
+        &.close:before{
+            width: 40px;
+            margin-right: -5px;
+        } 
+	}
+   	&:after,
+   	&:before{
+		content: '';
+	   	display: block;
+	   	position: absolute;
+		right: 0;
+		top: 50%;
+		z-index: -1
+   	}
+	&.open{
+		&:after{
+			background-color: #fff;
+			margin-top: -2px;
+			height: 4px;
+			width: 24px;
+			transition: width 0.2s ease-in-out;
+		}
+		&:before{
+			border-bottom: 4px solid #fff;
+			border-top: 4px solid #fff;
+			height: 24px;
+			margin-top: -12px;
+			width: 30px;
+			transition: width 0.2s ease-in-out;
+		}
+	}
+	&.close{
+		margin-top: calc(#{$padding-top} - 8px);
+		@media only screen and (max-width:600px) {
+			margin-top: calc(#{$padding-top} - 10px);
+		}
+		&:after{
+			background-color: $color-highlight;
+			margin-top: -2px;
+			height: 4px;
+			width: 30px;
+			transform: rotate(45deg);
+            transition: all 0.5s;
+		}
+		&:before{
+			background-color: $color-highlight;
+			margin-top: -2px;
+			height: 4px;
+			width: 30px;
+			transform: rotate(-45deg);
+            transition: all 0.5s;
+		}
+	}
+}
+
+/* ==========================================================================
+   Language nav
+   ========================================================================== */
+
+.c-language-navigation{
+	line-height: 1;
+	@media only screen and (min-width:600px) {
+		margin-top: $padding-top;
+		position: absolute;
+		right: 100px;
+		top: 0;
+		width: 30em;
+	}
+}
+
+.c-language-navigation-title {
+	font-weight: 300;
+	margin: 0;
+	padding: 0 0 0.5em 0;
+	opacity: 0.5;
+	@media only screen and (min-width:600px) {
+		display: inline-block;
+	}
+}
+
+.c-lang-menu {
+    position: relative;
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	.menu-item{
+		display: inline-block;
+		padding-left: 1em;
+	}
+}
+
+/* ==========================================================================
+   Offcanvas nav
+   ========================================================================== */
+
+.c-decoration{
+    background-color: $bg-content;
+    height: 100%;
+    min-width: 300px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(300%);
+    transition: opacity .1s ease-out, transform .4s ease-out;
+    width: 600px;
+    &:after {
+        background-color: $bg-content;
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 100%;
+        width: 400%;
+        height: 100%;
+        /*border-top: 300vw solid $bg-content;
+        border-top-color: rgb(255, 255, 255);
+        border-left: 82vw solid transparent;*/
+        z-index: 1;
+		/*-moz-transform: scale(.9999)*/
+    }
+
+}
+
+.c-off-canvas{
+    overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 0;
+	width: 100%;
+}
+
+.c-offcanvas-nav {
+	padding-top: 6em;
+	@media only screen and (max-width:600px) {
+		padding-top: 4em;
+	}
+}
+
+.c-header-navigation{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: max-height 1s ease-in-out;
+	text-align: right;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.c-header-navigation,
+.c-additional-content{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform .2s ease-in-out .2s, opacity .4s ease-in-out .2s;
+}
+
+.c-header-navigation .menu-item + .menu-item {
+	padding-top: 0.35em;
+	@media only screen and (max-width:600px) {
+		padding-top: 0.7em;
+	}
+}
+
+// .c-header-navigation .menu-item-link {
+// 	display: inline-block;
+// 	position: relative;
+// 	padding: 0.05em 0.1em 0.05em 1em;
+// 	z-index: 1;
+// }
+
+// .c-header-navigation .menu-item-link::before {
+// 	content:'';
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 0;
+// 	height: 100%;
+// 	background-color: $color-highlight;
+// 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00d4b4+0,00d4b4+50,00d4b4+100&0+0,1+50,1+100 */
+// 	background: -moz-linear-gradient(left,  rgba(220,220,220,0) 0%, rgba(220,220,220,1) 50%, rgba(220,220,220,1) 100%); /* FF3.6-15 */
+// 	background: -webkit-linear-gradient(left,  rgba(220,220,220,0) 0%,rgba(220,220,220,1) 50%,rgba(220,220,220,1) 100%); /* Chrome10-25,Safari5.1-6 */
+// 	background: linear-gradient(to right,  rgba(220,220,220,0) 0%,rgba(220,220,220,1) 50%,rgba(220,220,220,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DCDCDC', endColorstr='#DCDCDC',GradientType=1 ); /* IE6-9 */
+
+
+// 	transition: width 0.2s ease-out;
+// 	z-index: -1;
+// }
+
+.c-header-navigation .menu-item-link:hover::before,
+.c-header-navigation .c-active .menu-item-link::before {
+	width: 100%;
+}
+
+.c-header-navigation a,
+.c-header-navigation a:hover,
+.c-header-navigation a:focus,
+.c-text-light .c-header-navigation a,
+.c-text-light .c-header-navigation a:hover,
+.c-text-light .c-header-navigation a:focus,
+.c-additional-content a,
+.c-additional-content a:hover,
+.c-additional-content a:focus,
+.c-offcanvas-lang-list a,
+.c-offcanvas-lang-list a:hover,
+.c-offcanvas-lang-list a:focus,
+.c-offcanvas-lang-list .c-active a:focus,
+.c-text-light .c-additional-content a,
+.c-text-light .c-additional-content a:hover,
+.c-text-light .c-additional-content a:focus {
+	color: $text-color;
+}
+
+.c-offcanvas-lang-list a:hover,
+.c-additional-content .c-active a{
+	color: $text-color;
+	background-size: 4px 4px;
+}
+
+
+.c-additional-content{
+	position: relative;
+	padding-top: 2em;
+	margin-top: 5em;
+	overflow: hidden;
+	p + p {
+		padding-top: .8em;
+	}
+}
+
+.c-offcanvas-lang-list::before,
+.c-additional-content::before,
+.c-text-light .c-additional-content::before {
+	background-color: $color-primary;
+	left: auto;
+	right: 0;
+}
+
+
+/* ==========================================================================
+   Offcanvas nav close
+   ========================================================================== */
+
+#open-navigation.close-navigation,
+#open-navigation:not(:target){
+
+    top: auto;
+    height: auto;
+
+    .c-inner-off-canvas{
+        min-height: 0vh;
+        height: 0px;
+        //transition: min-height 0s ease-out 0s, max-width .4s ease-out 0s;
+    }
+    .c-decoration{
+        //transition: opacity 0s ease-out 0s, transform .4s cubic-bezier(0, 0.4, 0.6, 1);
+    }
+	/*.c-inner-off-canvas{
+		@media only screen and (min-width: 1600px){
+			max-width: 1560px;
+		    margin-left: auto;
+		    margin-right: auto;
+			position: relative;
+		}
+	}*/
+	.c-offcanvas-toggle{
+		&.close{
+			display: none;
+		}
+		&.open{
+			display: block;
+		}
+	}
+
+	.c-language-navigation {
+		@media only screen and (max-width:600px) {
+			@include visuallyhidden;
+		}
+	}
+
+    .c-additional-content,
+	.c-header-navigation{
+		@include visuallyhidden;
+	}
+}
+
+
+
+/* ==========================================================================
+   Offcanvas nav open
+   ========================================================================== */
+#open-navigation.open-navigation,
+#open-navigation:target{
+
+    top: auto;
+    height: auto;
+    overflow: auto;
+    overflow-y: hidden;
+    position: relative;
+
+	// position: relative;
+	// overflow: hidden;
+	// top: 0;
+ //    height: 100%;
+	width: 100%;
+	z-index: 1000;
+	.layout-scrollbar-obtrusive{
+		padding-right: 18px;
+		@media only screen and (min-width:1100px) {
+			padding-right: 16px;
+		}
+		.c-header{
+			padding-right: 18px;
+			@media only screen and (min-width:1100px) {
+				padding-right: 16px;
+			}
+		}
+	}
+	.c-header{
+		min-height: 100vh;
+	}
+	.c-header-logo{
+		opacity: .6;
+	}
+	&:before{
+		background-color: $color-primary;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: .6;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 900;
+	}
+	.c-scroll-canvas{
+		overflow-y: scroll;
+	}
+	.c-off-canvas{
+		height: 100%;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		z-index: 1000;
+		.c-inner-off-canvas{
+            .c-decoration{
+                opacity: 1;
+                transform: translateX(0);
+            }
+			min-width: 300px;
+			min-height: 100vh;
+			height: auto;
+			padding-top: $padding-top;
+			padding-bottom: 4rem;
+		}
+	}
+	.c-offcanvas-toggle{
+ 		&.close{
+ 			display: block;
+ 		}
+ 		&.open{
+ 			display: none;
+ 		}
+ 	}
+
+
+	.c-language-navigation {
+		@media only screen and (max-width:600px) {
+			@include visuallyunhidden;
+			padding-bottom: 3em;
+		}
+	}
+
+    .c-additional-content,
+	.c-header-navigation{
+		@include visuallyunhidden;
+        opacity: 1;
+        transform: translateX(0);
+	}
+
+    .c-additional-content{
+    	//position: relative;
+    	padding-top: 2em;
+    	margin-top: 5em;
+    }
+
+	.c-text-light .c-language-navigation,
+	.c-text-light .c-lang-menu a,
+	.c-text-light .c-lang-menu a:hover,
+	.c-text-light .c-lang-menu a:focus {
+		color: $text-color;
+	}
+
+}
+
+.c-offcanvas-lang-list{
+
+	display: flex;
+	align-items: left;
+	margin-left: 2rem;
+	padding-left: 2rem;
+
+	li{
+		margin-top: 2rem;
+		display: inline-block;
+		padding-right: 2rem;
+	}
+
+
+
+}
+
+.c-offcanvas-lang-list a,
+.c-offcanvas-lang-list a:visited{
+	font-size: 1.2rem;
+	color: $text-color;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+

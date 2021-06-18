@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.c-header {
+	padding-top: $padding-top;
+	padding-bottom: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	z-index: 1000;
+
+	&.fixed{
+		position: fixed;
+	}
+}
+
+
+.c-header-logo {
+	position: relative;
+	width: 210px;
+	z-index: 1;
+	margin-left: 2px!important;
+}
+
+.c-header-logo a {
+	color: $text-color-light;
+	display: block;
+}
+
+.c-header-logo svg {
+	width: 100%;
+	/*height: auto;*/
+}
+
+.c-text-light .c-header-logo .logo-color {
+	fill: $text-color-light;
+
+	&.dark{
+		fill: $color-primary;
+	}
+}
+
+#lottie{
+	position: absolute;
+	width: 100%;
+}
+
+/* css for ie 11, controls height of lottie */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #lottie {
+		height: 24px;
+	}
+}
+
+.c-header-logo-fallback{
+	margin-top: -0.5px;
+	position: absolute;
+	width: 100%;
+
+	&.dark .logo-color{
+		fill: #2E1AA9!important;
+	}
+}
+
+.c-text-light #__lottie_element_25 stop,
+.c-text-light .c-header-logo .logo-color-gradient{
+	stop-color: $text-color-light;
+}
+.c-text-light .c-header-logo .dark .logo-color-gradient{
+	stop-color: $color-primary !important;
+}
+
+@media only screen and (max-width:600px) { 
+	.c-header-logo-fallback{
+		margin-top: -4px;
+	}
+}
+

@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.c-footer {
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background-color: $bg-dark;
+	color: $text-color-footer;
+}
+
+.c-footer p {
+	padding-bottom: 1.5em;
+}
+
+.c-footer-disclaimer {
+	padding-top: 2em;
+}
+
+.c-footer-disclaimer-list,
+.c-footer-nav-list,
+.c-footer-nav-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.c-footer-disclaimer-list li {
+	display: inline-block;
+}
+
+.c-footer-disclaimer-list li + li {
+	padding-left: 4em;
+}
+
+
+
+.c-footer-nav-list {
+	text-transform: uppercase;
+}
+
+.c-footer-nav-list li + li {
+	padding-top: 0.5em;
+}
+
+.c-footer-nav-list li.c-active a,
+.c-footer-disclaimer-list li.c-active a {
+	color: $color-highlight;
+}
+
+
+.c-footer a,
+.c-footer a:visited {
+	color: $text-color-footer;
+}
+
+.c-footer a:hover,
+.c-footer a:focus {
+	color: $color-highlight;
+}
+
+.c-footer-line {
+	margin-top: 2.5em;
+	padding-top: 2em;
+}
+
+.c-list-social,
+.c-footer .c-list-social {
+	margin-top: 1em;
+}
+
+.c-footer-logo {
+	padding-bottom: 0.25em;
+	width: 130px;
+	opacity: 0.8;
+}
+
+.c-footer-swissmade {
+	padding-top: 4em;
+	width: 100px;
+	opacity: 0.9;
+}
+
+.c-footer-link-swissmade {
+	position: relative;
+	margin-top: 4em;
+	width: 100px;
+	height: 77px;
+}
+
+.c-footer-link-swissmade::before {
+	content:'';
+	position: absolute;
+	background-image:url(../images/logo-swissmade.svg);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 77px;
+	left: 0;
+	top: 0;
+	background-positon:  0 0;
+}
+
+.c-footer-link-swissmade:hover::before {
+	background-position:  0 -100px;
+}
+
+.c-footer-widget{
+	width: 200px!important;
+}
+
+
+

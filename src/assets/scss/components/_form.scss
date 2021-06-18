@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Form
+   ========================================================================== */
+/* safari form fix */
+input,
+input[type="text"],
+input[type="email"],
+textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+	-webkit-box-shadow: none;
+}
+
+/* remove chrome autofill yellow color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-transition-delay: 2000s;
+}
+
+.c-form-item {
+	position: relative;
+	width: 100%;
+	padding-bottom: 1.5em;
+}
+
+.c-form-text {
+	width: 100%;
+	border: none;
+	border-bottom: solid 2px $text-color-footer;
+	color: $text-color-light;
+	padding: 0.5em 0;
+	background-color: transparent;
+}
+
+.c-form-footer .c-form-text {
+	padding-right: 130px;
+}
+
+.c-form-text:focus {
+	border-color: $color-highlight;
+	outline: none;
+}
+
+
+.c-form-standard label,
+.c-form-footer label {
+	display: block;
+	padding-bottom: 2px;
+}
+
+.c-form-error,
+.c-form-confirmation{
+    display: block;
+    
+    &.hidden{
+        display: none;
+    }
+
+    &.c-form-error{
+        color: #e40426;
+    }
+}
+
+
+/* ==========================================================================
+  error
+   ========================================================================== */
+
+.c-form-error .c-form-text {
+    border-bottom-color: #dd0000;
+}
+
+.c-form-error label,
+.c-form-error span {
+    color: #dd0000;
+}
+
+/* error */
+.c-form-error .c-form-text,
+.c-form-error .c-form-textarea,
+.c-form-standard .c-form-error input[type="checkbox"]:checked+label::before,
+.c-form-standard .c-form-error input[type="checkbox"]:not(:checked)+label::before{
+	border-color: #dd0000;
+}
+
+.c-form-error label,
+.c-form-error span {
+	color: #dd0000;
+}
+
+.c-form-error span {
+	display: block;
+	padding-top: 0.25em;
+}

@@ -1,0 +1,2 @@
+<iframe id="map"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11024.316308408519!2d7.799755!3d46.308267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcefc01570023d8d1!2sWohn-%20und%20K%C3%BCchenstudio%20Ruffener!5e0!3m2!1sen!2sch!4v1623942248824!5m2!1sen!2sch" allowfullscreen="" loading="lazy"></iframe>

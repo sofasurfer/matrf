@@ -1,0 +1,42 @@
+/* Variables, Naming may vary from project to project */
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+$font-stack-default: 'Roboto', sans-serif;
+
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+/* text */
+$text-color: #666;; /* grey */
+$text-color-light: #fff;
+$text-color-medium: #605D6A;
+$text-color-footer: #d6d6d6;
+
+$color-primary: #666; /* blue */
+$color-highlight: #666; /* green */
+
+/* background */
+$bg-content: #fff;
+$bg-dark: #333333; /* grey */
+$bg-light: #E2E5E9; /* grey */
+
+
+/* line-colors */
+$border-basic: #E2E5E9;
+$border-light: #fff;
+$border-dark: #59585c;
+
+
+$cubic-transition: ease-out;
+
+
+/* ==========================================================================
+   Padding
+   ========================================================================== */
+
+$padding-top: 3rem; /* padding header */
