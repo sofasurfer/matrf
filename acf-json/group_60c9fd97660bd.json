@@ -419,7 +419,8 @@
                                 "singlelarge": "Single Large",
                                 "singlefullscreen": "Single Fullscreen",
                                 "twocol": "Two Cols",
-                                "tiles": "Tiles (six images)"
+                                "tiles": "Tiles (six images)",
+                                "slider": "Slider"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -470,6 +471,11 @@
                                         "field": "field_5f05d28b2d62a",
                                         "operator": "!=",
                                         "value": "tiles"
+                                    },
+                                    {
+                                        "field": "field_5f05d28b2d62a",
+                                        "operator": "!=",
+                                        "value": "slider"
                                     }
                                 ]
                             ],
@@ -536,6 +542,11 @@
                                         "field": "field_5f05d28b2d62a",
                                         "operator": "!=",
                                         "value": "tiles"
+                                    },
+                                    {
+                                        "field": "field_5f05d28b2d62a",
+                                        "operator": "!=",
+                                        "value": "slider"
                                     }
                                 ]
                             ],
@@ -592,6 +603,13 @@
                                         "field": "field_5f05d28b2d62a",
                                         "operator": "==",
                                         "value": "tiles"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f05d28b2d62a",
+                                        "operator": "==",
+                                        "value": "slider"
                                     }
                                 ]
                             ],
@@ -1331,5 +1349,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623943775
+    "modified": 1625668560
 }

@@ -56,6 +56,28 @@
             <?php endforeach; ?>
         </div>
     </div>
+<?php elseif( $site_element['type'] == 'slider' ): ?>
+    <!-- img tiles, zusatzclass c-color-change-bottom hinzufügen, falls nachfolgend noch anderer inhalt kommt!-->           
+    <div class="c-container-wide c-container-gallery c-img-tiles <?= ($site_element['padding']) ? 'c-color-change-bottom' : ''; ?>">
+        <div class="c-row">
+            <div class="c-col-12">
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <?php foreach( $site_element['tiles'] as $image ): ?>
+                            <li class="splide__slide">
+                                <figure class="c-ratiobox c-ratiobox-4by3">
+                                    <?php $imageid = $image; ?>
+                                    <?= do_shortcode("[render_imagetag id=\"$imageid\"]"); ?>
+                                </figure>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php elseif( $site_element['type'] == 'singlefullscreen' ): ?>
     <!-- bild 100% breite, bildhöhe kann variieren, es sollte aber möglich sein, für mobile ein bild in einem anderen ratio einzufügen. zusatzclass c-color-change-bottom hinzufügen, falls nachfolgend noch anderer inhalt kommt und keine Bildlegende benutzt wurde -->
     <div class="c-container-wide c-img-wide <?= ($site_element['padding']) ? 'c-color-change-bottom' : ''; ?>">
