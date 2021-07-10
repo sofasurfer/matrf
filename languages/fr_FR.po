@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cubegrafik\n"
 "Report-Msgid-Bugs-To: https://cubegrafik.com\n"
-"POT-Creation-Date: 2021-06-16 11:44+0200\n"
+"POT-Creation-Date: 2021-06-18 11:26+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,15 +18,15 @@ msgstr ""
 "esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: components/general.php:119
+#: components/general.php:128
 msgid "Header Menu"
 msgstr "Header Menu"
 
-#: components/general.php:120
+#: components/general.php:129
 msgid "Footer Menu"
 msgstr "Footer Menu"
 
@@ -39,7 +39,7 @@ msgid "Leider können wir die von Ihnen gesuchte Seite nicht finden."
 msgstr ""
 "Malheureusement, nous ne pouvons pas trouver la page que vous recherchez."
 
-#: templates/page_footer.php:32
+#: templates/page_footer.php:32 templates/rev_element_team.php:23
 msgid "Öffnungszeiten"
 msgstr "Heures d’ouverture"
 
@@ -51,7 +51,7 @@ msgstr "&copy; ruffener"
 msgid "Navigation öffnen"
 msgstr "Ouvrir la navigation"
 
-#: templates/page_header.php:81
+#: templates/page_header.php:82
 msgid "Zurück zum Inhalt"
 msgstr "Retour au sommaire"
 
