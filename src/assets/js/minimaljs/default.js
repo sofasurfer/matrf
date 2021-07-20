@@ -112,10 +112,13 @@
         */
         //new Splide( '.splide' ).mount();
 
-        new Splide( '.splide', {
-            type  : 'fade',
-            rewind: true,
-        } ).mount();
+        if( $('.splide').length > 0 ){
+
+            new Splide( '.splide', {
+                rewind: true,
+            } ).mount();
+
+        };
 
         // Check if mobile
         if( isMobile() ){

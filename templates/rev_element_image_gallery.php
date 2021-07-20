@@ -58,10 +58,10 @@
     </div>
 <?php elseif( $site_element['type'] == 'slider' ): ?>
     <!-- img tiles, zusatzclass c-color-change-bottom hinzufügen, falls nachfolgend noch anderer inhalt kommt!-->           
-    <div class="c-container-wide c-container-gallery c-img-tiles <?= ($site_element['padding']) ? 'c-color-change-bottom' : ''; ?>">
+    <div class="<?= ($site_element['large']) ? 'c-container-wide' : 'c-container'; ?> c-container-gallery c-img-tiles <?= ($site_element['padding']) ? 'c-color-change-bottom' : ''; ?>">
         <div class="c-row">
             <div class="c-col-12">
-                <div class="splide">
+                <div class="splide" data-splide='<?= ($site_element['3tiles']) ? '{"perPage":"3","rewind":true}' : '{"type":"fade","rewind":true}'; ?>'>
                     <div class="splide__track">
                         <ul class="splide__list">
                             <?php foreach( $site_element['tiles'] as $image ): ?>

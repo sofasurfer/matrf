@@ -319,7 +319,7 @@ class General {
         if( !empty($args['alt'])){
             $alt = $args['alt'];
         }else{
-            $alt = wp_get_attachment_caption( $args['id'] );
+            $alt = get_the_title( $args['id'] );
         }
 
         // error_log(print_r(get_intermediate_image_sizes(),true));

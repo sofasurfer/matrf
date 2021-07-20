@@ -431,6 +431,62 @@
                             "placeholder": ""
                         },
                         {
+                            "key": "field_60f68e93ac1e7",
+                            "label": "Large",
+                            "name": "large",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f05d28b2d62a",
+                                        "operator": "==",
+                                        "value": "slider"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_60f6be5274be5",
+                            "label": "3 x Tiles",
+                            "name": "3tiles",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f05d28b2d62a",
+                                        "operator": "==",
+                                        "value": "slider"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_5f05d3952d62b",
                             "label": "Align right",
                             "name": "align_right",
@@ -1349,5 +1405,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1625668560
+    "modified": 1626783559
 }
