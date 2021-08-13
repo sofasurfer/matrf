@@ -110,14 +110,13 @@
         /*
             Slider
         */
-        //new Splide( '.splide' ).mount();
-
         if( $('.splide').length > 0 ){
-
-            new Splide( '.splide', {
-                rewind: true,
-            } ).mount();
-
+            var elms = document.getElementsByClassName( 'splide' );
+            for ( var i = 0, len = elms.length; i < len; i++ ) {
+                new Splide( elms[ i ], {
+                    rewind: true,
+                } ).mount();
+            }
         };
 
         // Check if mobile
