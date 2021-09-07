@@ -32,7 +32,7 @@
         <div class="c-container">
             <div class="c-row animation-element fade-right">
                 <div class="c-col-10 c-text-block animation">
-                    <a class="c-link-cta" href="<?= get_field('rev_teaser_cta',$site_element['teaser'])['url']; ?>"><?= get_the_title($site_element['teaser']);?><span class="c-icon c-icon-arrow-big"></span></a>                     
+                    <a class="c-link-cta" target="<?= get_field('rev_teaser_cta',$site_element['teaser'])['target']; ?>" href="<?= get_field('rev_teaser_cta',$site_element['teaser'])['url']; ?>"><?= get_the_title($site_element['teaser']);?><span class="c-icon c-icon-arrow-big"></span></a>                     
                 </div>
             </div>              
         </div>

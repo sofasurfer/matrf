@@ -182,7 +182,8 @@ class General {
         ToDo: add link
     */
     public function c_shortcode_get_categories($args){   
-
+        return '';
+        
         $categories = get_the_terms($args['pid'],$args['posttype']);
         if( !empty($categories) && count($categories) > 0 ){
             $cats = array();

@@ -116,7 +116,7 @@ if($site_element['manual_selection'] == 1 ){
                         <?php else: ?>
                         <span class="c-category-title"><?= do_shortcode("[c_get_categories pid=\"$post->ID\" posttype=\"$taxonomy\"]"); ?></span>
                         <?php endif; ?>                        
-                        <a class="c-link-teaser" href="<?= get_permalink($post); ?>">    
+                        <a class="c-link-teaser_" href="<?= get_permalink($post); ?>">    
                             <?php if( $post->post_type == 'post' ): ?>
                                 <h3 class="c-teaser-title animation"><span><?= get_the_title($post);?></span></h3>
                             <?php else: ?>

@@ -69,7 +69,7 @@
                                 <figure class="c-ratiobox c-ratiobox-4by3">
                                     <?php $imageid = $image; ?>
                                     <?= do_shortcode("[render_imagetag id=\"$imageid\"]"); ?>
-                                    <span><?= get_the_title($imageid); ?></span>
+                                    <!--span><?= get_the_title($imageid); ?></span-->
                                 </figure>
                             </li>
                             <?php endforeach; ?>
