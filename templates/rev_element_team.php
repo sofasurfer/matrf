@@ -14,7 +14,6 @@
             </ul>      
         </div>
         <div class="c-col-4">
-            <h4><?= apply_filters('c_get_option','company_title'); ?></h4>
             <p>
             <?= apply_filters('c_get_option','company_address'); ?>
             <a href="mailto:<?= apply_filters('c_get_option','company_email'); ?>"><?= apply_filters('c_get_option','company_email'); ?></a></br>

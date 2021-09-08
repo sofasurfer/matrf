@@ -33,7 +33,7 @@
                     <?= apply_filters('c_get_option','opening_hours'); ?>
                 </div>
                 <div class="c-col-3">
-                <a href="https://www.provenexpert.com/wohn-und-kuechenstudio-ruffener/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget" target="_blank"><img class="c-footer-widget"src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/widget_landscape_180_de_0.png" alt="" /></a>
+                <a style="float:right;" href="https://www.provenexpert.com/wohn-und-kuechenstudio-ruffener/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget" target="_blank"><img class="c-footer-widget"src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/widget_landscape_180_de_0.png" alt="" /></a>
                 </div>
             </div>
         </div>
@@ -67,7 +67,15 @@
 
     <script src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/js/minimal.1.min.js?v=<?= do_shortcode('[wp_version]') ;?>"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157866086-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-157866086-1');
+    </script>
 
 </body>
 </html>

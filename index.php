@@ -1,10 +1,10 @@
 <?php
 
 // This will be removed after GoLive
-if( !is_user_logged_in() ) {
-    wp_redirect( '/cms/wp-admin/?redirect_to=' . get_home_url(), 302 );
-    exit;
-}
+// if( !is_user_logged_in() ) {
+//     wp_redirect( '/cms/wp-admin/?redirect_to=' . get_home_url(), 302 );
+//     exit;
+// }
 
 // Get Header
 get_template_part('templates/page_header');
