@@ -54,15 +54,15 @@
    	}
 	&.open{
 		&:after{
-			background-color: #fff;
+			background-color: #666;
 			margin-top: -2px;
 			height: 4px;
 			width: 24px;
 			transition: width 0.2s ease-in-out;
 		}
 		&:before{
-			border-bottom: 4px solid #fff;
-			border-top: 4px solid #fff;
+			border-bottom: 4px solid #666;
+			border-top: 4px solid #666;
 			height: 24px;
 			margin-top: -12px;
 			width: 30px;
@@ -89,6 +89,28 @@
 			width: 30px;
 			transform: rotate(-45deg);
             transition: all 0.5s;
+		}
+	}
+}
+
+.c-text-light{
+	.c-offcanvas-toggle{
+		&.open{
+			&:after{
+				background-color: #fff;;
+				margin-top: -2px;
+				height: 4px;
+				width: 24px;
+				transition: width 0.2s ease-in-out;
+			}
+			&:before{
+				border-bottom: 4px solid #fff;
+				border-top: 4px solid #fff;
+				height: 24px;
+				margin-top: -12px;
+				width: 30px;
+				transition: width 0.2s ease-in-out;
+			}
 		}
 	}
 }

@@ -384,7 +384,8 @@
                                 "fb": "Facebook",
                                 "linkedin": "Linkedin",
                                 "twitter": "Twitter",
-                                "googlemaps": "GoogleMaps"
+                                "googlemaps": "GoogleMaps",
+                                "download": "Download"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -439,5 +440,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623942987
+    "modified": 1631272030
 }

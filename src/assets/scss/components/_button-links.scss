@@ -341,6 +341,27 @@ a[href^="tel:"] {
 	background-position: 0 -300px;
 }
 
+.c-btn-social-download::after {
+	background-image:url(../images/download.svg);
+}
+.c-btn-social-download::before {
+	background-image:url(../images/download.svg);
+	top: 50%;
+	left: 50%;
+	margin-left: -12px;
+	margin-top: -12px;
+	width: 24px;
+	height: 24px;
+	background-position: 0px 0px;
+}
+
+.c-footer .c-btn-social-download::before {
+	background-image:url(../images/download2.svg);
+	background-position: 0px 0px;
+}
+
+
+
 .c-btn-social-googlemaps::after {
 	background-image:url(../images/map.svg);
 }

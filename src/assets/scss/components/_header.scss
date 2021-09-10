@@ -42,6 +42,23 @@
 	}
 }
 
+header{
+	.logo-light{
+		display: none;
+	}
+	.logo-dark{
+		display: block;
+	}
+	&.c-text-light{
+		.logo-light{
+			display: block;
+		}
+		.logo-dark{
+			display: none;
+		}
+	}
+}
+
 #lottie{
 	position: absolute;
 	width: 100%;
