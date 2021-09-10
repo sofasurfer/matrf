@@ -1,7 +1,7 @@
 <!-- text only, für rechts alinierung c-row-justify-right einfügen, siehe beispiel-->
 <div class="c-container c-text-only">
     <div class="c-row">
-        <div class="c-col-8 c-text-block">
+        <div class="c-col-12 c-text-block">
             <h3 class="animation <?= ($site_element['small']) ? 'c-category-title' : ''; ?>"><?= $site_element['title']; ?></h3>
             <?= $site_element['description']; ?>
             <ul class="c-partner-list animation">
