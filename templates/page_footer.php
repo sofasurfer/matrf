@@ -33,7 +33,7 @@
                     <?= apply_filters('c_get_option','opening_hours'); ?>
                 </div>
                 <div class="c-col-3">
-                <a class="f-widget" href="https://www.provenexpert.com/wohn-und-kuechenstudio-ruffener/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget" target="_blank"><img class="c-footer-widget"src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/widget_landscape_180_de_0.png" alt="" /></a>
+                <a class="f-widget" href="https://www.provenexpert.com/wohn-und-kuechenstudio-ruffener/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget" target="_blank"><img class="c-footer-widget"src="<?= apply_filters('c_get_option','company_certificate'); ?>" alt="" /></a>
                 </div>
             </div>
         </div>

@@ -1108,9 +1108,7 @@
                                 "id": ""
                             },
                             "wpml_cf_preferences": 3,
-                            "post_type": [
-                                "post"
-                            ],
+                            "post_type": "",
                             "taxonomy": "",
                             "filters": [
                                 "search",
@@ -1405,5 +1403,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1630941483
+    "modified": 1631540150
 }
