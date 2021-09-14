@@ -578,8 +578,7 @@
 	}
 	
 	.c-text-block blockquote p::before {
-		left: 0;
-		top: -.9em;
+		display: none
 	}
 	
 	.c-img-var .c-col-4,
