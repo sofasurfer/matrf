@@ -411,7 +411,6 @@
 
 		flex: 0 0 auto;
 
-		overflow: hidden;
 
 		justify-content: space-between;
 
@@ -421,11 +420,15 @@
 		margin: 10px 30px;
 
 		width: 220px;
-    height: 260px;
 
 		background-size: cover;
 		background-position: center;
 
+		line-height: 1.2;
+
+		h4{
+			padding-top:0.6em;
+		}
 
 		&::before{
 			content: ""!important;
@@ -434,29 +437,6 @@
 			background: none!important;
 		}
 
-		.text{
-			padding-top: 50px;
-			background-color: white;
-			max-height: 0px;
-			width: 220px;
-			height: 260px;
-			overflow: hidden;
-			padding: 0 12px;
-			margin-left: -20px;
-			
-			transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-
-			h4{
-				margin-top: 50px;
-			}
-
-		}
-
-		&:hover{
-			.text{
-				max-height: 260px;
-			}
-		}
 
 	  @media only screen and (max-width: 640px) {
 	  	margin-left: calc( 50% - 111px );

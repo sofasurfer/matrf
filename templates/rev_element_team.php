@@ -4,7 +4,8 @@
         <div class="c-col-8 c-text-block">
             <ul class="c-team-list animation">
                 <?php foreach($site_element['team_members'] as $member): ?>
-                    <li style="background-image: url('<?= get_the_post_thumbnail_url($member);?>');">
+                    <li>
+                        <figure><img src="<?= get_the_post_thumbnail_url($member);?>" /></figure>
                         <div class="text">
                         <h4><?= get_the_title($member); ?></h4>
                         <p><?= get_the_excerpt($member); ?></p>
