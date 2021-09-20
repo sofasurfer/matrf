@@ -6,6 +6,13 @@
 //     exit;
 // }
 
+
+if ( ! defined( 'ABSPATH' ) ) {
+    echo "Invalid URL";
+    exit; // Exit if accessed directly
+}
+
+
 // Get Header
 get_template_part('templates/page_header');
 
