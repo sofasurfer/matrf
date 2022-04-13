@@ -58,6 +58,11 @@
     </footer>
 
 
+    <!-- cookie notice-->
+    <div class="c-cookie-notice c-text-light c-text-small c-text-block" id="cookie-notice">
+        <?= apply_filters('c_get_option','archive_cookie_message'); ?>
+    </div>
+
     <script type="text/javascript">
     var templateUrl = '<?= get_bloginfo("template_url"); ?>';
     /* <![CDATA[ */

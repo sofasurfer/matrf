@@ -3,6 +3,100 @@
     "title": "Header",
     "fields": [
         {
+            "key": "field_625688f2b7f10",
+            "label": "Title",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5f05b7b7b78c4",
+            "label": "Title",
+            "name": "rev_header_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f05b7aab78c3",
+            "label": "Subtitle",
+            "name": "rev_header_subtitle",
+            "type": "text",
+            "instructions": "On portfolio pages, this will be replaced by the Categories.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f0dbf95aeda2",
+            "label": "Remove margin bottom",
+            "name": "remove_margin_bottom",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6256895957f68",
+            "label": "Images",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5f05b669b6174",
             "label": "Image desktop",
             "name": "rev_header_image_desktop",
@@ -73,11 +167,11 @@
             "mime_types": ""
         },
         {
-            "key": "field_5f05b7aab78c3",
-            "label": "Subtitle",
-            "name": "rev_header_subtitle",
-            "type": "text",
-            "instructions": "On portfolio pages, this will be replaced by the Categories.",
+            "key": "field_62568913b7f11",
+            "label": "SEO Meta",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -85,27 +179,24 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 3,
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 0
         },
         {
-            "key": "field_5f05b7b7b78c4",
-            "label": "Title",
-            "name": "rev_header_title",
+            "key": "field_62568a7af7d53",
+            "label": "PageTitle",
+            "name": "rev_header_metatitle",
             "type": "text",
-            "instructions": "",
-            "required": 1,
+            "instructions": "Optional, this replaces the title set in the first tab",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 3,
+            "wpml_cf_preferences": 0,
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -131,26 +222,6 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
-        },
-        {
-            "key": "field_5f0dbf95aeda2",
-            "label": "Remove margin bottom",
-            "name": "remove_margin_bottom",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "wpml_cf_preferences": 3,
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
         }
     ],
     "location": [
@@ -191,5 +262,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623942998
+    "modified": 1649838903
 }

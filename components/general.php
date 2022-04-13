@@ -199,15 +199,10 @@ class General {
 
     public function c_get_pagetitle(){
 
-        $pagetitle = get_the_title() . ' | ';
-        if( get_post_type() == 'portfolio' ){
-            $pagetitle .= get_the_title($this->c_get_option('archive_portfolio')) . ' | ';
-        }else if( get_post_type() == 'service' ){
-            $pagetitle .= get_the_title($this->c_get_option('archive_services')) . ' | ';
-        }else if( get_post_type() == 'team' ){
-            $pagetitle .= get_the_title($this->c_get_option('archive_team')) . ' | ';
-        }else if( get_post_type() == 'post' ){
-            $pagetitle .= get_the_title($this->c_get_option('archive_blog')) . ' | ';
+        if( !empty(get_field('rev_header_metatitle')) ){
+            $pagetitle = get_field('rev_header_metatitle') . ' | ';
+        }else{
+            $pagetitle = get_field('rev_header_title') . ' | ';
         }
 
         return  $pagetitle . get_bloginfo();
@@ -219,6 +214,8 @@ class General {
         $obj['locale'] = ICL_LANGUAGE_CODE;
         $obj['title'] = $this->c_get_pagetitle();
         $obj['description'] = get_field('rev_header_metadescription');
+        $obj['title'] = $this->c_get_pagetitle();
+        $obj['url'] = get_permalink();
 
         $image_id = false;
         if( get_post_thumbnail_id() ){

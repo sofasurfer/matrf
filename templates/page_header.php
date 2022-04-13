@@ -13,6 +13,7 @@
         <meta property="og:locale" content="<?= $og_info['locale']; ?>"/>
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="<?= $og_info['title']; ?>"/>
+        <meta property="og:url" content="<?= $og_info['url']; ?>"/>
         <meta property="og:description" content="<?= $og_info['description']; ?>"/>
         <meta property="og:image" content="<?= $og_info['image'][0]; ?>"/>
         <meta property="og:image:width" content="<?= $og_info['image'][1]; ?>" />

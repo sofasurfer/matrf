@@ -710,6 +710,13 @@
                                         "operator": "==",
                                         "value": "tiles"
                                     }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f05d28b2d62a",
+                                        "operator": "==",
+                                        "value": "slider"
+                                    }
                                 ]
                             ],
                             "wrapper": {
@@ -1403,5 +1410,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1631540150
+    "modified": 1649836876
 }
