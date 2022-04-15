@@ -9,7 +9,6 @@
                 <div class="c-col-4 ">
                     <a href="<?php echo get_home_url(); ?>">
                     <div class="c-footer-logo"><img src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ruffener-logo-retina-w.png" alt="" /></div></a>
-                    <?= apply_filters('c_get_option','company_slogan'); ?><br/>
                     <div class="c-footer-line c-line">
                         <?= apply_filters('c_get_option','company_address'); ?>
                         <a href="mailto:<?= apply_filters('c_get_option','company_email'); ?>"><?= apply_filters('c_get_option','company_email'); ?></a></br>
@@ -33,7 +32,7 @@
                     <?= apply_filters('c_get_option','opening_hours'); ?>
                 </div>
                 <div class="c-col-3">
-                <a class="f-widget" href="https://www.provenexpert.com/wohn-und-kuechenstudio-ruffener/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget" target="_blank"><img class="c-footer-widget"src="<?= apply_filters('c_get_option','company_certificate'); ?>" alt="" /></a>
+                <a class="f-widget" href="https://www.provenexpert.com/wohn-und-kuechenstudio-ruffener/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget" target="_blank"><img class="c-footer-widget"src="<?= apply_filters('c_get_option','company_certificate'); ?>" alt="Provenexpert" /></a>
                 </div>
             </div>
         </div>

@@ -23,10 +23,10 @@
         <link rel="apple-touch-icon" sizes="180x180" href="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ico/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ico/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ico/favicon-16x16.png">
-        <link rel="manifest" href="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ico/site.webmanifest">
-        <link rel="mask-icon" href="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ico/safari-pinned-tab.svg" color="#2e1aa9">
-        <meta name="msapplication-TileColor" content="#2e1aa9">
+        <link rel="mask-icon" href="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ico/safari-pinned-tab.svg" color="#8fb844">
+        <meta name="msapplication-TileColor" content="#8fb844">
         <meta name="theme-color" content="#ffffff">
+
 
 
         <!-- Preventing IE11 to request by default the /browserconfig.xml more than one time -->
