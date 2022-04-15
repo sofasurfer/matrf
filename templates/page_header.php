@@ -61,8 +61,8 @@
                 <div class="c-header-logo">
                     <a href="<?php echo get_home_url(); ?>">
                         <figure class="c-header-logo-fallback text dark">
-                            <img class="logo-dark" src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ruffener-logo-retina-d.png" />
-                            <img class="logo-light" src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ruffener-logo-retina-w.png" />
+                            <img alt="Ruffener logo dark" class="logo-dark" src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ruffener-logo-retina-d.png" />
+                            <img alt="Ruffener logo light" class="logo-light" src="<?= get_stylesheet_directory_uri(); ?>/dist/assets/images/ruffener-logo-retina-w.png" />
                         </figure>
                         <h2 class="c-hide-visually"><?= apply_filters('c_get_option','company_title'); ?></h2>
                         <h3 class="c-hide-visually"><?= apply_filters('c_get_option','company_slogan'); ?></h3>
