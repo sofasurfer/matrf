@@ -57,6 +57,8 @@
     </footer>
 
 
+    <div id="back-top"><a href="/#" title="Back to top">Nach oben</a></div> 
+
     <!-- cookie notice-->
     <div class="c-cookie-notice c-text-light c-text-small c-text-block" id="cookie-notice">
         <?= apply_filters('c_get_option','archive_cookie_message'); ?>

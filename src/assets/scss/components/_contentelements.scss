@@ -477,6 +477,23 @@
 
 }
 
+
+#back-top{        
+	position:fixed;
+	right:50px;
+	bottom:50px;
+	display: block;
+	font-size: 1rem;
+	background-color: #666;
+	color: white;
+	padding: 0.5rem 1rem;
+	border: solid 1px;
+}
+
+#back-top a{
+	color: white!important;
+}
+
 #map
 {
     filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
@@ -486,5 +503,5 @@
     height: 800px;
     width: 100%;
     border:0;
-    margin-bottom:6rem;
+    margin-bottom:0px;
 }
