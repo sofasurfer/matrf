@@ -128,6 +128,19 @@
 		top: 0;
 		width: 30em;
 	}
+	
+	height: 40px;
+	margin-top: -8px;
+	position: absolute;
+	right: 30px;
+	top: 0;
+	width: 40px;
+	z-index: 1200;	
+	
+	a{
+	    color: white;
+	}
+	
 }
 
 .c-language-navigation-title {

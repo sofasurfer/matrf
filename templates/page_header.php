@@ -68,6 +68,7 @@
                         <h3 class="c-hide-visually"><?= apply_filters('c_get_option','company_slogan'); ?></h3>
                     </a>
                 </div>
+                <?= do_shortcode('[c_post_languages ulclass="c-offcanvas-lang-list" ]'); ?>
                 <!-- navigation open toggle -->
                 <a href="#open-navigation" class="c-nav open c-button c-offcanvas-toggle" tab-index="0">
                     <span class="c-hide-visually"><?= __('Navigation öffnen','ruffener');?></span>
@@ -77,7 +78,7 @@
             <div class="c-off-canvas">
                 <div class="c-inner-off-canvas c-container">
                     <div class="c-decoration">
-                         <?= do_shortcode('[c_post_languages ulclass="c-offcanvas-lang-list" ]'); ?>
+
                     </div>
                     <!-- navigation close toggle -->
                     <a href="#" class="c-nav close c-button c-offcanvas-toggle" tab-index="0">
