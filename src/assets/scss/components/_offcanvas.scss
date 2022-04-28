@@ -441,6 +441,7 @@
 
 
 	.c-language-navigation {
+
 		@media only screen and (max-width:600px) {
 			@include visuallyunhidden;
 			padding-bottom: 3em;
@@ -466,20 +467,35 @@
 	.c-text-light .c-lang-menu a:focus {
 		color: $text-color;
 	}
+	
+	.c-offcanvas-lang-list a{
+		color:#666!important;
+	}
 
+	.c-offcanvas-lang-list .c-active a{
+		background-size: 4px 4px!important;
+	}
+	@media only screen and (max-width:600px) {
+		.c-offcanvas-lang-list{
+			display: block!important;
+		}
+	}
 }
 
 .c-offcanvas-lang-list{
-
+	position:relative;
 	display: flex;
 	align-items: left;
-	margin-left: 2rem;
-	padding-left: 2rem;
+	margin-right: 2rem;
+	padding-right: 2rem;
+	float: right;
+	margin-top: 0px;
+	z-index: 9999;
 
 	li{
-		margin-top: 2rem;
+		margin-top: 0;
 		display: inline-block;
-		padding-right: 2rem;
+		padding-right: 1rem;
 	}
 
 
@@ -489,10 +505,21 @@
 .c-offcanvas-lang-list a,
 .c-offcanvas-lang-list a:visited{
 	font-size: 1.2rem;
-	color: $text-color;
+	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
+	background-size: 0px 0px;
+}
+.c-offcanvas-lang-list a:hover,
+.c-offcanvas-lang-list .c-active a{
+	color: #666;
+	background-size: 0px 0px!important;
 }
 
 
+@media only screen and (max-width:600px) {
+	.c-offcanvas-lang-list{
+		display: none;
+	}
+}
 
