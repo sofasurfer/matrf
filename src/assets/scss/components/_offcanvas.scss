@@ -502,6 +502,7 @@
 
 }
 
+
 .c-offcanvas-lang-list a,
 .c-offcanvas-lang-list a:visited{
 	font-size: 1.2rem;
@@ -509,9 +510,8 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	background-position: 0 80%;
-	background-image: linear-gradient(to bottom,#fff 0,#fff 100%);
 	background-repeat: repeat-x;
-	background-size: 20% 20%;
+	// background-size: 20% 20%;
 	transition: background .1s ease-out;	
 	// background-size: 0px 0px;
 }
@@ -523,10 +523,18 @@
 	// background-size: 0px 0px!important;
 }
 
+.close-navigation{
+	.c-offcanvas-lang-list a,
+	.c-offcanvas-lang-list a:visited{
+		background-image: linear-gradient(to bottom,#fff 0,#fff 100%)!important;
+	}
+
+}
 
 @media only screen and (max-width:600px) {
 	.c-offcanvas-lang-list{
 		display: none;
+		// display: block!important;
 	}
 }
 
