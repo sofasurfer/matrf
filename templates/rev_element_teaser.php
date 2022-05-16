@@ -7,8 +7,7 @@
                 $rev_image = get_post_thumbnail_id($site_element['teaser']); 
                 $rev_image_mobile = get_field('rev_teaser_image_mobile',$site_element['teaser']);
                 ?>
-                <?= do_shortcode("[render_imagetag id=\"$rev_image\" mobile=\"$rev_image_mobile\"]"); ?>   ***     
-
+                <?= do_shortcode("[render_imagetag id=\"$rev_image\" mobile=\"$rev_image_mobile\"]"); ?>
             </figure>
             <!--div class="img-load-mask"></div-->
             <!--text-->

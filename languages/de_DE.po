@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cubegrafik\n"
 "Report-Msgid-Bugs-To: https://cubegrafik.com\n"
-"POT-Creation-Date: 2021-06-16 11:43+0200\n"
+"POT-Creation-Date: 2022-05-16 14:30+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -12,21 +12,21 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
 "_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
 "esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: components/general.php:119
+#: components/general.php:128
 msgid "Header Menu"
 msgstr ""
 
-#: components/general.php:120
+#: components/general.php:129
 msgid "Footer Menu"
 msgstr ""
 
@@ -38,19 +38,23 @@ msgstr ""
 msgid "Leider können wir die von Ihnen gesuchte Seite nicht finden."
 msgstr ""
 
-#: templates/page_footer.php:32
+#: templates/page_footer.php:31 templates/rev_element_team.php:23
 msgid "Öffnungszeiten"
 msgstr ""
 
-#: templates/page_footer.php:53
+#: templates/page_footer.php:52
 msgid "&copy; ruffener"
 msgstr ""
 
-#: templates/page_header.php:71
+#: templates/page_footer.php:60
+msgid "Nach oben"
+msgstr ""
+
+#: templates/page_header.php:74
 msgid "Navigation öffnen"
 msgstr ""
 
-#: templates/page_header.php:81
+#: templates/page_header.php:85
 msgid "Zurück zum Inhalt"
 msgstr ""
 

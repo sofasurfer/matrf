@@ -57,7 +57,7 @@
     </footer>
 
 
-    <div id="back-top"><a href="/#" title="Back to top">Nach oben</a></div> 
+    <div id="back-top"><a href="/#" title="Back to top"><?= __('Nach oben','ruffener');?></a></div> 
 
     <!-- cookie notice-->
     <div class="c-cookie-notice c-text-light c-text-small c-text-block" id="cookie-notice">
