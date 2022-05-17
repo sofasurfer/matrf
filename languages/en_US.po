@@ -32,15 +32,15 @@ msgstr "Footer Menu"
 
 #: templates/page_404.php:6
 msgid "Seite nicht gefunden"
-msgstr "Page introuvable"
+msgstr "Page not found"
 
 #: templates/page_404.php:14
 msgid "Leider können wir die von Ihnen gesuchte Seite nicht finden."
-msgstr ""
+msgstr "Unfortunately, we cannot find the page you are looking for."
 
 #: templates/page_footer.php:31 templates/rev_element_team.php:23
 msgid "Öffnungszeiten"
-msgstr ""
+msgstr "Opening hours"
 
 #: templates/page_footer.php:52
 msgid "&copy; ruffener"
@@ -48,67 +48,67 @@ msgstr "&copy; ruffener"
 
 #: templates/page_footer.php:60
 msgid "Nach oben"
-msgstr ""
+msgstr "To the top"
 
 #: templates/page_header.php:74
 msgid "Navigation öffnen"
-msgstr ""
+msgstr "Open navigation"
 
 #: templates/page_header.php:85
 msgid "Zurück zum Inhalt"
-msgstr ""
+msgstr "Back to content"
 
 #: templates/page_portfolio.php:8
 msgid "Kunde"
-msgstr ""
+msgstr "Customer"
 
 #: templates/page_portfolio.php:13
 msgid "Auftraggeber"
-msgstr ""
+msgstr "Client"
 
 #: templates/page_portfolio.php:18
 msgid "Leistungen"
-msgstr ""
+msgstr "Services"
 
 #: templates/page_portfolio.php:48
 msgid "Releasedatum"
-msgstr ""
+msgstr "Release date"
 
 #: templates/page_portfolio.php:55
 msgid "Zum Projekt"
-msgstr ""
+msgstr "To the project"
 
 #: templates/page_post.php:5
 msgid "Autor"
-msgstr ""
+msgstr "Author"
 
 #: templates/page_post.php:15
 msgid "Veröffentlicht"
-msgstr ""
+msgstr "Published"
 
 #: templates/page_post.php:18
 msgid "Kategorie"
-msgstr ""
+msgstr "Category"
 
 #: templates/page_team.php:45
 msgid "Zur Übersicht"
-msgstr ""
+msgstr "To the overview"
 
 #: templates/page_team.php:49
 msgid "Zurück"
-msgstr ""
+msgstr "Back"
 
 #: templates/page_team.php:51
 msgid "Nächster"
-msgstr ""
+msgstr "Next"
 
 #: templates/rev_element_backlink.php:4
 msgid "Back"
-msgstr ""
+msgstr "Back"
 
 #: templates/rev_element_expert.php:28
 msgid "Ihr Ansprechspartner"
-msgstr ""
+msgstr "Your contact"
 
 #~ msgid "Newsletter abonnieren"
 #~ msgstr "S’abonner à la newsletter"

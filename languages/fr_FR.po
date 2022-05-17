@@ -49,7 +49,7 @@ msgstr "&copy; ruffener"
 
 #: templates/page_footer.php:60
 msgid "Nach oben"
-msgstr ""
+msgstr "Haut de page"
 
 #: templates/page_header.php:74
 msgid "Navigation öffnen"
@@ -93,15 +93,15 @@ msgstr "Catégorie"
 
 #: templates/page_team.php:45
 msgid "Zur Übersicht"
-msgstr ""
+msgstr "Vers l’aperçu"
 
 #: templates/page_team.php:49
 msgid "Zurück"
-msgstr ""
+msgstr "Retour"
 
 #: templates/page_team.php:51
 msgid "Nächster"
-msgstr ""
+msgstr "Prochain"
 
 #: templates/rev_element_backlink.php:4
 msgid "Back"
