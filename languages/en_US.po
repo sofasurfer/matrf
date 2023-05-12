@@ -8,7 +8,7 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr_FR\n"
+"Language: en_EN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,16 +32,15 @@ msgstr "Footer Menu"
 
 #: templates/page_404.php:6
 msgid "Seite nicht gefunden"
-msgstr "Page introuvable"
+msgstr "Page not found"
 
 #: templates/page_404.php:14
 msgid "Leider können wir die von Ihnen gesuchte Seite nicht finden."
-msgstr ""
-"Malheureusement, nous ne pouvons pas trouver la page que vous recherchez."
+msgstr "Unfortunately, we cannot find the page you are looking for."
 
 #: templates/page_footer.php:31 templates/rev_element_team.php:23
 msgid "Öffnungszeiten"
-msgstr "Heures d’ouverture"
+msgstr "Opening hours"
 
 #: templates/page_footer.php:52
 msgid "&copy; ruffener"
@@ -49,67 +48,67 @@ msgstr "&copy; ruffener"
 
 #: templates/page_footer.php:60
 msgid "Nach oben"
-msgstr "Haut de page"
+msgstr "To the top"
 
 #: templates/page_header.php:74
 msgid "Navigation öffnen"
-msgstr "Ouvrir la navigation"
+msgstr "Open navigation"
 
 #: templates/page_header.php:85
 msgid "Zurück zum Inhalt"
-msgstr "Retour au sommaire"
+msgstr "Back to content"
 
 #: templates/page_portfolio.php:8
 msgid "Kunde"
-msgstr "Client"
+msgstr "Customer"
 
 #: templates/page_portfolio.php:13
 msgid "Auftraggeber"
-msgstr "Donneur d’ordre"
+msgstr "Client"
 
 #: templates/page_portfolio.php:18
 msgid "Leistungen"
-msgstr "Prestations"
+msgstr "Services"
 
 #: templates/page_portfolio.php:48
 msgid "Releasedatum"
-msgstr "Date de publication"
+msgstr "Release date"
 
 #: templates/page_portfolio.php:55
 msgid "Zum Projekt"
-msgstr "Le projet"
+msgstr "To the project"
 
 #: templates/page_post.php:5
 msgid "Autor"
-msgstr "Auteur"
+msgstr "Author"
 
 #: templates/page_post.php:15
 msgid "Veröffentlicht"
-msgstr "Publié"
+msgstr "Published"
 
 #: templates/page_post.php:18
 msgid "Kategorie"
-msgstr "Catégorie"
+msgstr "Category"
 
 #: templates/page_team.php:45
 msgid "Zur Übersicht"
-msgstr "Vers l’aperçu"
+msgstr "To the overview"
 
 #: templates/page_team.php:49
 msgid "Zurück"
-msgstr "Retour"
+msgstr "Back"
 
 #: templates/page_team.php:51
 msgid "Nächster"
-msgstr "Prochain"
+msgstr "Next"
 
 #: templates/rev_element_backlink.php:4
 msgid "Back"
-msgstr "Retour"
+msgstr "Back"
 
 #: templates/rev_element_expert.php:28
 msgid "Ihr Ansprechspartner"
-msgstr "Votre personne de contact"
+msgstr "Your contact"
 
 #~ msgid "Newsletter abonnieren"
 #~ msgstr "S’abonner à la newsletter"

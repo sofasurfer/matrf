@@ -57,7 +57,7 @@
     </footer>
 
 
-    <div id="back-top"><a href="/#" title="Back to top">Nach oben</a></div> 
+    <div id="back-top"><a href="/#" title="Back to top"><?= __('Nach oben','ruffener');?></a></div> 
 
     <!-- cookie notice-->
     <div class="c-cookie-notice c-text-light c-text-small c-text-block" id="cookie-notice">
@@ -82,6 +82,23 @@
 
       gtag('config', 'UA-157866086-1');
     </script>
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.sofasurfer.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '46']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
 
 </body>
 </html>
